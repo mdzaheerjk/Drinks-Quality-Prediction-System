@@ -2,8 +2,9 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  source_URL: https://github.com/mdzaheerjk/Drinks-Quality-Prediction-System/blob/main/data/Drinks-data.zip
+  source_URL: https://raw.githubusercontent.com/mdzaheerjk/Drinks-Quality-Prediction-System/main/data/Drinks-data.zip
   local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion
 
 data_validation:
   root_dir: artifacts/data_validation

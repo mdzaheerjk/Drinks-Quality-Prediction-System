@@ -28,7 +28,7 @@ class ModelEvaluation:
 
         predicted_qualities=model.predict(test_x)
 
-        (rmse,mae,r2)=self.eval_metrics(test_x,predicted_qualities)
+        (rmse,mae,r2)=self.eval_metrics(test_y,predicted_qualities)
 
         scores={"rmse":rmse,"mae":mae,"r2":r2}
         save_json(path=Path(self.config.metric_file_name),data=scores)

@@ -3,16 +3,18 @@ import yaml
 from mlProject import logger
 import json
 import joblib
-from ensure import ensure_annotations
+def ensure_annotations(func):
+    return func
 from box.exceptions import BoxValueError
 from pathlib import Path
 from typing import Any
 from box import ConfigBox
 
 @ensure_annotations
-def read_yaml(path_to_yaml:Path) -> ConfigBox:
+def read_yaml(path_to_yaml: Any) -> ConfigBox:
     try:
-        with open(path_to_yaml)as yaml_file:
+        path_to_yaml = Path(path_to_yaml)
+        with open(path_to_yaml) as yaml_file:
             content=yaml.safe_load(yaml_file)
             logger.info(f"Yaml file : {path_to_yaml} Loaded Successfully")
             return ConfigBox(content)
@@ -29,30 +31,35 @@ def create_directories(path_to_directories:list,verbose=True):
             logger.info(f"created directory at : {path}")
 
 @ensure_annotations
-def save_json(path:Path,data:dict):
-    with open(path,"w")as f:
+def save_json(path: Any, data: dict):
+    path = Path(path)
+    with open(path,"w") as f:
         json.dump(data,f,indent=4)
     logger.info(f"json file saved at {path}")
 
 @ensure_annotations
-def load_json(path:Path)->ConfigBox:
-    with open(path)as f:
+def load_json(path: Any) -> ConfigBox:
+    path = Path(path)
+    with open(path) as f:
         content=json.load(f)
     logger.info(f"json file loaded succesfully from: {path}")
     return ConfigBox(content)
 
 @ensure_annotations
-def save_bin(data:Any,path:Path):
+def save_bin(data: Any, path: Any):
+    path = Path(path)
     joblib.dump(value=data,filename=path)
     logger.info(f"Binary file saved at : {path}")
 
 @ensure_annotations
-def load_bin(path:Path)->Any:
+def load_bin(path: Any) -> Any:
+    path = Path(path)
     data=joblib.load(path)
     logger.info(f"Binary file loaded from {path}")
     return data
 
 @ensure_annotations
-def get_size(path:Path)->str:
+def get_size(path: Any) -> str:
+    path = Path(path)
     size_in_kb=round(os.path.getsize(path)/1024) 
     return f"~{size_in_kb} KB"

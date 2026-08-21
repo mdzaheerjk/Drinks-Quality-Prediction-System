@@ -1,5 +1,6 @@
 from flask import Flask,render_template,request
 import os
+import sys
 import numpy as np
 import pandas as pd
 from mlProject.pipeline.prediction import PredictionPipeline
@@ -12,12 +13,12 @@ def homepage():
 
 @app.route('/train',methods=['GET'])
 def training():
-    os.system('python main.py')
+    os.system(f'"{sys.executable}" main.py')
     return "Training Successfull!"
 
 @app.route("/predict",methods=['POST','GET'])
 def index():
-    if request=='POST':
+    if request.method=='POST':
         try:
 
             #  reading the inputs given by the user
@@ -39,7 +40,7 @@ def index():
             obj=PredictionPipeline()
             predict=obj.predict(data)
 
-            return render_template('result.html',prediction=str(predict))
+            return render_template('results.html',prediction=str(predict))
 
         except Exception as e:
             print("the Exception message is : ",e)

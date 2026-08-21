@@ -17,12 +17,12 @@ class ConfigurationManager:
 
         create_directories([self.config.artifacts_root])
 
-    def get_data_ingestion_config(self)->DataTransformatinConfig:
+    def get_data_ingestion_config(self)->DataIngestionConfig:
 
         config=self.config.data_ingestion
         create_directories([config.root_dir])
 
-        data_ingestion_config=DataTransformatinConfig(
+        data_ingestion_config=DataIngestionConfig(
             root_dir=config.root_dir,
             source_URL=config.source_URL,
             local_data_file=config.local_data_file,
@@ -69,7 +69,7 @@ class ConfigurationManager:
             model_name=config.model_name,
             alpha=params.alpha,
             l1_ratio=params.l1_ratio,
-            target_colums=schema.name 
+            target_column=schema.name 
         )
 
         return model_trainer_config

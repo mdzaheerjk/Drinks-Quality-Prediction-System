@@ -1,0 +1,314 @@
+[2026-08-21 13:27:33,399 : INFO : main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-08-21 13:27:33,404 : INFO : main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-08-21 13:27:33,404 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:27:33,407 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:27:33,410 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:27:33,411 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:27:33,412 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:27:33,412 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:27:33,412 : INFO : common: created directory at : artifacts/data_ingestion]
+[2026-08-21 13:27:33,415 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:27:33,416 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:27:33,417 : INFO : common: created directory at : artifacts/data_ingestion]
+[2026-08-21 13:27:33,612 : ERROR : main: HTTP Error 404: Not Found]
+Traceback (most recent call last):
+  File "D:\AI-ML\REAL WORLD PROJECTS\MACHINE LEARNING\Drinks-Quality-Prediction-System\main.py", line 12, in <module>
+    data_ingestion.main()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "D:\AI-ML\REAL WORLD PROJECTS\MACHINE LEARNING\Drinks-Quality-Prediction-System\src\mlProject\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\AI-ML\REAL WORLD PROJECTS\MACHINE LEARNING\Drinks-Quality-Prediction-System\src\mlProject\components\data_ingestion.py", line 15, in download_file
+    filename,headers=requests.urlretrieve(
+                     ~~~~~~~~~~~~~~~~~~~~^
+        url=self.config.source_URL,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        filename=self.config.local_data_file
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Python314\Lib\urllib\request.py", line 212, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+                            ~~~~~~~^^^^^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 493, in open
+    response = meth(req, response)
+  File "C:\Python314\Lib\urllib\request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Python314\Lib\urllib\request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Python314\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+[2026-08-21 13:27:33,612 : ERROR : main: HTTP Error 404: Not Found]
+Traceback (most recent call last):
+  File "D:\AI-ML\REAL WORLD PROJECTS\MACHINE LEARNING\Drinks-Quality-Prediction-System\main.py", line 12, in <module>
+    data_ingestion.main()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "D:\AI-ML\REAL WORLD PROJECTS\MACHINE LEARNING\Drinks-Quality-Prediction-System\src\mlProject\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\AI-ML\REAL WORLD PROJECTS\MACHINE LEARNING\Drinks-Quality-Prediction-System\src\mlProject\components\data_ingestion.py", line 15, in download_file
+    filename,headers=requests.urlretrieve(
+                     ~~~~~~~~~~~~~~~~~~~~^
+        url=self.config.source_URL,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        filename=self.config.local_data_file
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Python314\Lib\urllib\request.py", line 212, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+                            ~~~~~~~^^^^^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 493, in open
+    response = meth(req, response)
+  File "C:\Python314\Lib\urllib\request.py", line 602, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Python314\Lib\urllib\request.py", line 531, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Python314\Lib\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\Python314\Lib\urllib\request.py", line 611, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 404: Not Found
+[2026-08-21 13:27:58,813 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:27:58,816 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:27:58,821 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:27:58,823 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:27:58,824 : INFO : common: created directory at : artifacts/data_ingestion]
+[2026-08-21 13:28:14,664 : INFO : main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-08-21 13:28:14,668 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:28:14,670 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:28:14,672 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:28:14,672 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:28:14,673 : INFO : common: created directory at : artifacts/data_ingestion]
+[2026-08-21 13:28:14,900 : WARNING : data_ingestion: Failed to download from source_URL (HTTP Error 404: Not Found). Using local fallback data/Drinks-data.zip.]
+[2026-08-21 13:28:14,903 : INFO : data_ingestion: Copied local data file from data\Drinks-data.zip to artifacts/data_ingestion/data.zip]
+[2026-08-21 13:28:14,906 : INFO : main: >>>>>> stage {STAGE_NAME} completed <<<<<<
+
+x==========x]
+[2026-08-21 13:28:14,907 : INFO : main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-08-21 13:28:14,910 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:28:14,911 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:28:14,913 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:28:14,913 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:28:14,914 : INFO : common: created directory at : artifacts/data_validation]
+[2026-08-21 13:28:14,921 : INFO : main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-08-21 13:28:14,921 : INFO : main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-08-21 13:28:14,925 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:28:14,926 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:28:14,928 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:28:14,929 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:28:14,929 : INFO : common: created directory at : artifacts/data_transformation]
+[2026-08-21 13:28:14,955 : INFO : data_transformation: Splitted data into training and test sets]
+[2026-08-21 13:28:14,955 : INFO : data_transformation: (1199, 12)]
+[2026-08-21 13:28:14,955 : INFO : data_transformation: (400, 12)]
+[2026-08-21 13:28:14,956 : INFO : main: >>>>>> stage {STAGE_NAME} completed <<<<<<
+
+x==========x]
+[2026-08-21 13:28:14,956 : INFO : main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-08-21 13:28:14,958 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:28:14,959 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:28:14,961 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:28:14,962 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:28:14,962 : INFO : common: created directory at : artifacts/model_trainer]
+[2026-08-21 13:28:15,012 : INFO : main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2026-08-21 13:28:15,012 : INFO : main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2026-08-21 13:28:15,016 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:28:15,017 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:28:15,019 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:28:15,020 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:28:15,021 : INFO : common: created directory at : artifacts/model_evaluation]
+[2026-08-21 13:28:15,031 : INFO : common: json file saved at artifacts\model_evaluation\metrics.json]
+[2026-08-21 13:28:15,031 : INFO : main: >>>>>> stage {STAGE_NAME} completed <<<<<<
+
+x==========x]
+[2026-08-21 13:28:38,935 : INFO : main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-08-21 13:28:38,941 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:28:38,943 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:28:38,946 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:28:38,947 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:28:38,948 : INFO : common: created directory at : artifacts/data_ingestion]
+[2026-08-21 13:28:38,948 : INFO : data_ingestion: File already exists of size : ~23 KB]
+[2026-08-21 13:28:38,953 : INFO : main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-08-21 13:28:38,953 : INFO : main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-08-21 13:28:38,956 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:28:38,957 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:28:38,960 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:28:38,961 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:28:38,962 : INFO : common: created directory at : artifacts/data_validation]
+[2026-08-21 13:28:38,968 : INFO : main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-08-21 13:28:38,969 : INFO : main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-08-21 13:28:38,972 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:28:38,973 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:28:38,975 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:28:38,976 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:28:38,976 : INFO : common: created directory at : artifacts/data_transformation]
+[2026-08-21 13:28:39,010 : INFO : data_transformation: Splitted data into training and test sets]
+[2026-08-21 13:28:39,010 : INFO : data_transformation: (1199, 12)]
+[2026-08-21 13:28:39,010 : INFO : data_transformation: (400, 12)]
+[2026-08-21 13:28:39,010 : INFO : main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-08-21 13:28:39,010 : INFO : main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-08-21 13:28:39,013 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:28:39,015 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:28:39,017 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:28:39,018 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:28:39,019 : INFO : common: created directory at : artifacts/model_trainer]
+[2026-08-21 13:28:39,065 : INFO : main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2026-08-21 13:28:39,065 : INFO : main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2026-08-21 13:28:39,069 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:28:39,071 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:28:39,074 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:28:39,075 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:28:39,076 : INFO : common: created directory at : artifacts/model_evaluation]
+[2026-08-21 13:28:39,087 : INFO : common: json file saved at artifacts\model_evaluation\metrics.json]
+[2026-08-21 13:28:39,087 : INFO : main: >>>>>> stage Model evaluation stage completed <<<<<<
+
+x==========x]
+[2026-08-21 13:31:18,690 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:31:28,136 : INFO : main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-08-21 13:31:28,141 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:31:28,142 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:31:28,144 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:31:28,145 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:31:28,146 : INFO : common: created directory at : artifacts/data_ingestion]
+[2026-08-21 13:31:28,146 : INFO : data_ingestion: File already exists of size : ~23 KB]
+[2026-08-21 13:31:28,150 : INFO : main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-08-21 13:31:28,150 : INFO : main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-08-21 13:31:28,153 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:31:28,155 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:31:28,156 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:31:28,157 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:31:28,157 : INFO : common: created directory at : artifacts/data_validation]
+[2026-08-21 13:31:28,164 : INFO : main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-08-21 13:31:28,164 : INFO : main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-08-21 13:31:28,167 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:31:28,169 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:31:28,171 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:31:28,171 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:31:28,172 : INFO : common: created directory at : artifacts/data_transformation]
+[2026-08-21 13:31:28,196 : INFO : data_transformation: Splitted data into training and test sets]
+[2026-08-21 13:31:28,196 : INFO : data_transformation: (1199, 12)]
+[2026-08-21 13:31:28,196 : INFO : data_transformation: (400, 12)]
+[2026-08-21 13:31:28,196 : INFO : main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-08-21 13:31:28,196 : INFO : main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-08-21 13:31:28,200 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:31:28,201 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:31:28,203 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:31:28,203 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:31:28,204 : INFO : common: created directory at : artifacts/model_trainer]
+[2026-08-21 13:31:28,250 : INFO : main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2026-08-21 13:31:28,250 : INFO : main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2026-08-21 13:31:28,253 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:31:28,254 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:31:28,257 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:31:28,258 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:31:28,258 : INFO : common: created directory at : artifacts/model_evaluation]
+[2026-08-21 13:31:28,271 : INFO : common: json file saved at artifacts\model_evaluation\metrics.json]
+[2026-08-21 13:31:28,271 : INFO : main: >>>>>> stage Model evaluation stage completed <<<<<<
+
+x==========x]
+[2026-08-21 13:32:33,067 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:32:33,069 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:32:33,071 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:32:33,073 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:32:33,073 : INFO : common: created directory at : artifacts/data_ingestion]
+[2026-08-21 13:32:33,074 : INFO : data_ingestion: File already exists of size : ~23 KB]
+[2026-08-21 13:34:23,149 : INFO : main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-08-21 13:34:23,149 : ERROR : main: typing.Any cannot be used with isinstance()]
+Traceback (most recent call last):
+  File "D:\AI-ML\REAL WORLD PROJECTS\MACHINE LEARNING\Drinks-Quality-Prediction-System\main.py", line 12, in <module>
+    data_ingestion.main()
+  File "D:\AI-ML\REAL WORLD PROJECTS\MACHINE LEARNING\Drinks-Quality-Prediction-System\src\mlProject\pipeline\stage_01_data_ingestion.py", line 12, in main
+    config=ConfigurationManager()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\AI-ML\REAL WORLD PROJECTS\MACHINE LEARNING\Drinks-Quality-Prediction-System\src\mlProject\config\configuration.py", line 14, in __init__
+    self.config=read_yaml(config_filepath)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zahee\miniconda3\envs\ai-ml\Lib\site-packages\ensure\main.py", line 868, in __call__
+    if not isinstance(value, templ):
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\zahee\miniconda3\envs\ai-ml\Lib\typing.py", line 530, in __instancecheck__
+    raise TypeError("typing.Any cannot be used with isinstance()")
+TypeError: typing.Any cannot be used with isinstance()
+[2026-08-21 13:34:57,945 : INFO : main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2026-08-21 13:34:57,951 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:34:57,952 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:34:57,956 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:34:57,958 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:34:57,958 : INFO : common: created directory at : artifacts/data_ingestion]
+[2026-08-21 13:34:57,959 : INFO : data_ingestion: File already exists of size : ~23 KB]
+[2026-08-21 13:34:57,964 : INFO : main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2026-08-21 13:34:57,964 : INFO : main: >>>>>> stage Data Validation stage started <<<<<<]
+[2026-08-21 13:34:57,970 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:34:57,971 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:34:57,975 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:34:57,976 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:34:57,977 : INFO : common: created directory at : artifacts/data_validation]
+[2026-08-21 13:34:58,008 : INFO : main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2026-08-21 13:34:58,008 : INFO : main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2026-08-21 13:34:58,014 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:34:58,016 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:34:58,019 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:34:58,020 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:34:58,021 : INFO : common: created directory at : artifacts/data_transformation]
+[2026-08-21 13:34:58,051 : INFO : data_transformation: Splitted data into training and test sets]
+[2026-08-21 13:34:58,052 : INFO : data_transformation: (1199, 12)]
+[2026-08-21 13:34:58,052 : INFO : data_transformation: (400, 12)]
+[2026-08-21 13:34:58,052 : INFO : main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2026-08-21 13:34:58,053 : INFO : main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2026-08-21 13:34:58,057 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:34:58,058 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:34:58,061 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:34:58,061 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:34:58,062 : INFO : common: created directory at : artifacts/model_trainer]
+[2026-08-21 13:35:01,448 : INFO : main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2026-08-21 13:35:01,448 : INFO : main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2026-08-21 13:35:01,454 : INFO : common: Yaml file : config\config.yaml Loaded Successfully]
+[2026-08-21 13:35:01,455 : INFO : common: Yaml file : params.yaml Loaded Successfully]
+[2026-08-21 13:35:01,459 : INFO : common: Yaml file : schema.yaml Loaded Successfully]
+[2026-08-21 13:35:01,459 : INFO : common: created directory at : artifacts]
+[2026-08-21 13:35:01,460 : INFO : common: created directory at : artifacts/model_evaluation]
+[2026-08-21 13:35:01,473 : INFO : common: json file saved at artifacts\model_evaluation\metrics.json]
+[2026-08-21 13:35:01,474 : INFO : main: >>>>>> stage Model evaluation stage completed <<<<<<
+
+x==========x]

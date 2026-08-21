@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: mlProject
+Version: 0.0.0
+Summary: A Small python package for ml app
+Home-page: https://github.com/mdzaheerjk/Drinks-Quality-Prediction-System
+Author: mdzaheerjk
+Author-email: zaheerjkxai@gmail.com
+Project-URL: Bug Tracker, https://github.com/mdzaheerjk/Drinks-Quality-Prediction-System/issues
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: summary
+
+# Drinks-Quality-Prediction-System
+This project aims to build a robust, end-to-end Machine Learning pipeline for predicting the quality of Drinks based on physicochemical tests. It demonstrates a complete ML workflow, emphasizing modularity, reproducibility, and automation.
+
+## Project Preview
+
+<p align="center">
+  <img src="https://d14omfvx1qlabb.cloudfront.net/krishnaik.in/media/project_banners/19.png"
+       alt="Project Preview"
+       width="600" />
+</p>
+
+## System Architecture
+
+<p align="center">
+  <img src="https://d14omfvx1qlabb.cloudfront.net/krishnaik.in/media/project_architecture_diagrams/Gemini_Generated_Image_6wb0hw6wb0hw6wb0.jpg"
+       alt="System Architecture"
+       width="600" />
+</p>

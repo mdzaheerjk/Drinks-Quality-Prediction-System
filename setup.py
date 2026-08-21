@@ -15,7 +15,7 @@ setuptools.setup(
     version=__version__,
     author=AUTHOR_USER_NAME,
     author_email=AUTHOR_EMAIL,
-    desciption="A Small python package for ml app",
+    description="A Small python package for ml app",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url=f"https://github.com/mdzaheerjk/Drinks-Quality-Prediction-System",
